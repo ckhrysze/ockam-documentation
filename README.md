@@ -67,8 +67,8 @@ python3 -m http.server --bind 127.0.0.1 6000
 
 # In a new terminal window, setup a tcp-outlet that makes a TCP service available at the given
 # address `6000`. We can use this to send raw TCP traffic to the HTTP server on port `6000`.
-# Finally create a relay in your default Orchestrator project. Relays make it possible to
-# establish end-to-end protocols with services operating in a remote private networks, without
+# Finally, create a relay in your default Orchestrator project. Relays make it possible to
+# establish end-to-end protocols with services operating in remote private networks, without
 # requiring a remote service to expose listening ports to an outside hostile network like the
 # Internet.
 ockam tcp-outlet create --to 6000
@@ -76,7 +76,7 @@ ockam relay create
 
 # -- APPLICATION CLIENT --
 
-# Setup a a local tcp-inlet to allow raw TCP traffic to be received on port `7000` before
+# Setup a local tcp-inlet to allow raw TCP traffic to be received on port `7000` before
 # it is forwarded. A TCP inlet is a way of defining where a node should be listening for
 # connections, and where it should forward that traffic to.
 ockam tcp-inlet create --from 7000
@@ -139,7 +139,7 @@ No more having to design error-prone ad-hoc ways to distribute sensitive credent
 
 ### Deep Dives
 
-[<mark style="color:blue;">Read more</mark>](guides/use-cases/) about how teams are using Ockam for many [<mark style="color:blue;">use cases</mark>](guides/use-cases/) across industries or dive into our step-by-step reference on our [<mark style="color:blue;">command line</mark>](reference/command/) and [<mark style="color:blue;">rust libraries</mark>](reference/libraries/).
+[<mark style="color:blue;">Read more</mark>](guides/use-cases/) about how teams are using Ockam for many [<mark style="color:blue;">use cases</mark>](guides/use-cases/) across industries or dive into our step-by-step reference on our [<mark style="color:blue;">command line</mark>](reference/command/) and [<mark style="color:blue;">Rust libraries</mark>](reference/libraries/).
 
 <table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><a href="reference/command/"><strong>Ockam Command</strong></a></td><td>Command line tools to build and orchestrate highly scalable and secure distributed applications. Orchestrate nodes, vaults, identities, credentials, secure channels, relays, portals and more.</td><td></td><td><a href="reference/command/">command</a></td></tr><tr><td><a href="reference/libraries/"><strong>Ockam Programming Libraries</strong></a></td><td>Rust crates to build secure by design applications for any environment – from highly scalable cloud infrastructure to tiny battery operated microcontroller based devices.</td><td></td><td><a href="reference/libraries/rust/">rust</a></td></tr></tbody></table>
 
